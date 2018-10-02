@@ -1,0 +1,15 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+$color-primary: #68b738;
+$color-secondary: #f2f2f2;
+
+$border-color-primary: #cdcdcd;
+$border-color-secondary: #ededed;
+
+$font-color: #444444;
+
+$color-white: #fff;

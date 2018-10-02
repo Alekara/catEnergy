@@ -1,0 +1,95 @@
+.add-item {
+  min-height: 130px;
+  border-bottom: 1px solid $border-color-primary;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &:first-child {
+    border-top: 1px solid $border-color-primary;
+  }
+
+  &__title {
+    @include reset;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 15px;
+    font-weight: 400;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  &__info,
+  &__price {
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 14px;
+    color: $font-color;
+    margin-bottom: 14px;
+  }
+
+  &__purchase {
+    margin-bottom: 19px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .add-item {
+    border-right: 1px solid $border-color-primary;
+    border-left: 1px solid $border-color-primary;
+    padding-left: 38px;
+    padding-right: 38px;
+
+    &__title {
+      width: 344px;
+      font-size: 20px;
+      line-height: 68px;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    &__info,
+    &__price {
+      font-size: 16px;
+      line-height: 68px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+
+  .add-item {
+    min-height: 68px;
+    border-right: none;
+    border-left: none;
+    padding-left: 0;
+    padding-right: 0;
+    width: 895px;
+    justify-content: flex-start;
+
+    &__title {
+      line-height: 68px;
+      width: 325px;
+    }
+
+    &__info {
+      width: 245px;
+    }
+
+    &__price {
+      width: 80px;
+    }
+
+    &__purchase {
+      width: 245px;
+      margin-top: 15px;
+      margin-bottom: 16px;
+    }
+
+  }
+}

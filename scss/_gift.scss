@@ -1,0 +1,73 @@
+.gift {
+  min-height: 364px;
+  background: url(img/gift-photo-mobile.jpg) no-repeat 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-bottom: 60px;
+
+    & svg:hover {
+      fill: #e4edd5;
+    }
+  }
+
+  &__text {
+    @include reset;
+    color: $color-white;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 20px;
+    width: 170px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .gift {
+    min-height: 345px;
+    background: url(img/gift-photo-tablet.jpg) no-repeat 30px 70px;
+    flex-direction: row;
+    align-items: center;
+
+    &__button {
+      margin-left: 116px;
+      margin-right: 270px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &__text {
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+
+  .gift {
+    width: 245px;
+    min-height: 289px;
+    background: url(img/gift-photo-desktop.jpg) no-repeat 0 0;
+    flex-direction: column;
+
+    &__button {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 64px;
+      margin-bottom: 50px;
+    }
+
+    &__text {
+      text-align: center;
+    }
+  }
+
+
+}
