@@ -1,0 +1,25 @@
+.title {
+  height: 104px;
+  padding: 30px 20px;
+  border-bottom: 1px solid  $border-color-secondary;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+
+@media (min-width: $tablet-width) {
+  .title {
+    height: 110px;
+    padding: 30px;
+    border-bottom: none;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .title {
+    height: 120px;
+  }
+}

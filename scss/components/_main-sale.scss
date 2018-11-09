@@ -1,0 +1,141 @@
+.main-sale {
+  display: flex;
+  flex-direction: column;
+  
+  &__item {
+    padding: 10px 20px 25px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid $border-color-secondary;
+  }
+  
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+  
+  &__table {
+    width: 50%;
+  }
+  
+  &__purchase {
+    background-color: $color-primary;
+    color: $color-white;
+    text-transform: uppercase;
+    font-family: inherit;
+    
+    &--show {
+      background-color: $color-secondary;
+      color: $font-color;
+    }
+  }
+  
+  &__picture--plus {
+    text-align: center;
+    margin-bottom: 23px;
+  }
+  
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-sale {
+    padding: 0 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    &__item {
+      width: 324px;
+      padding: 40px 37px;
+      background: linear-gradient(to bottom, $color-white 24.56%, $color-secondary 24.56%, $color-secondary 100%);    
+      
+      &--more {
+        padding: 0;
+        padding-top: 140px;
+        background: $color-white;
+      }
+    }
+    
+    &__item:nth-child(2n+1) {
+      margin-right: 60px;
+    }
+    
+    &__content {
+      flex-direction: column;
+    }
+    
+    &__picture {
+      height: 174px;
+      margin-top: 64px;
+      
+      &--big {
+        margin-top: 29px;
+      }
+      
+      &--plus {
+        margin-top: 55px;
+        margin-bottom: 0;
+      }
+    }
+    
+    &__table {
+      width: 100%;
+      margin-bottom: 30px;
+      border-collapse: collapse;
+    }
+    
+    &__container {
+      width: 100%;
+      min-height: 432px;      
+      background-color: $color-white;
+      border: 1px solid #e7e7e7;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-sale {
+    padding: 0 40px;
+    
+    &__item {
+      width: 245px;
+      margin-right: 80px;
+      
+      &--more {
+        padding-top: 142px;
+      }
+    }
+    
+    &__item:nth-child(4n) {
+      margin-right: 0;
+    }
+    
+    &__picture {
+      margin-top: 64px;
+      
+      &--big {
+        margin-top: 25px;
+      }      
+    }
+    
+    
+
+    &__picture--plus {
+      margin-top: 126px;
+    }
+    
+    &__purchase--show {
+      background-color: $color-white;
+    }
+    
+    &__container {
+//      margin-top: 154px;
+    }
+  }
+  
+}
+

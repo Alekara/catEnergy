@@ -6,12 +6,17 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="catalog-header">
-    <h1 class="catalog-header__title">Каталог продукции</h1>
+    
   </header>
+  
   <main class="container">
+    <h1 class="title">Каталог продукции</h1>
+    
     <section class="main-sale">
+     
       <div class="main-sale__item">
         <div class="main-sale__content">
           <picture class="main-sale__picture">
@@ -194,50 +199,53 @@
         <button class="button main-sale__purchase" type="button">Заказать</button>
       </div>
 
-      <div class="main-sale__item">
-        <picture class="main-sale__picture--plus">
-          <source media="(min-width: 768px)" srcset="img/icon-plus.svg">
-          <img src="img/icon-plus-mobile.svg">
-        </picture>
-        <b class="product-info__caption product-info__caption--more">Показать еще 100500 товаров</b>
-        <p class="main-sale__text">На самом деле вкусов гораздо больше!</p>
-        <button class="button main-sale__purchase--show" type="button">Показать все</button>
+      <div class="main-sale__item main-sale__item--more">
+        <div class="main-sale__container">
+          <picture class="main-sale__picture--plus">
+            <source media="(min-width: 768px)" srcset="img/icon-plus.svg">
+            <img src="img/icon-plus-mobile.svg">
+          </picture>
+          <b class="product-info__caption product-info__caption--more">Показать еще 100500 товаров</b>
+          <p class="product-info__text">На самом деле вкусов гораздо больше!</p>
+          <button class="button main-sale__purchase main-sale__purchase--show" type="button">Показать все</button>
+        </div>
+        
       </div>
     </section>
 
     <section class="additional-sale">
       <h2 class="additional-sale__title">Дополнительные товары</h2>
-      <div class="additional-sale__content">
-
-        <div class="add-item">
+      
+      <ul class="additional-sale__content">
+        <li class="add-item">
           <h3 class="add-item__title">Сахарозаменитель</h3>
           <span class="add-item__info">1 упаковка (100 г)</span>
           <span class="add-item__price">100 Р.</span>
           <button class="button main-sale__purchase add-item__purchase" type="button">Заказать</button>
-        </div>
+        </li>
 
-        <div class="add-item">
+        <li class="add-item">
           <h3 class="add-item__title">Питьевая вода</h3>
           <span class="add-item__info">5 л</span>
           <span class="add-item__price">50 Р.</span>
           <button class="button main-sale__purchase add-item__purchase" type="button">Заказать</button>
-        </div>
+        </li>
 
-        <div class="add-item">
+        <li class="add-item">
           <h3 class="add-item__title">Молоко</h3>
           <span class="add-item__info">1 л</span>
           <span class="add-item__price">100 Р.</span>
           <button class="button main-sale__purchase add-item__purchase" type="button">Заказать</button>
-        </div>
+        </li>
 
-        <div class="add-item">
+        <li class="add-item">
           <h3 class="add-item__title">Витамины</h3>
           <span class="add-item__info">1 упаковка (30 г)</span>
           <span class="add-item__price">300 Р.</span>
           <button class="button main-sale__purchase add-item__purchase" type="button">Заказать</button>
-        </div>
-
-      </div>
+        </li>
+      </ul>
+      
       <div class="gift">
         <button class="gift__button">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="60" x="0px" y="0px"
@@ -258,13 +266,10 @@
       </div>
     </section>
 
-    <section class="collab">
+    <footer class="collab">
       <b class="collab__invite">Приглашаем к сотрудничеству дилеров!</b>
       <p class="collab__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-    </section>
-
-
-
+    </footer>
   </main>
 
 </body>

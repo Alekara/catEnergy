@@ -1,11 +1,22 @@
+@import "base/vars-and-mixins";
 @import "base/main";
-@import "base/varsAndMixins";
-@import "container";
-@import "catalog-header";
-@import "main-sale";
-@import "button";
-@import "product-info";
-@import "additional-sale";
-@import "add-item";
-@import "gift";
-@import "collab";
+
+@import "components/catalog-header";
+@import "components/title";
+@import "components/container";
+@import "components/main-sale";
+@import "components/product-info";
+@import "components/button";
+@import "components/additional-sale";
+@import "components/add-item";
+@import "components/gift";
+@import "components/collab";
+
+
+
+
+
+
+
+
+

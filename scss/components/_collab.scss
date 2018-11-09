@@ -1,0 +1,40 @@
+.collab {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: $color-secondary;
+  
+  &__invite {
+    width: 140px;
+    line-height: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  &__adress {
+    width: 140px;
+    font-family: "Arial";
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .collab {
+    padding: 60px 70px;
+    justify-content: space-between;
+    
+    & > * {
+      width: 160px;
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }  
+}
+
+@media (min-width: $desktop-width) {
+  .collab {
+    padding: 60px 100px;
+  }
+}
