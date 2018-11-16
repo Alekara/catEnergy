@@ -1,4 +1,17 @@
 .product-info {  
+  &__caption {
+    width: 79px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+
+    &--more {
+      width: 100%;
+      text-align: center;
+    }
+  }
   
   & tbody {
     font-family: "Arial", sans-serif;
@@ -9,20 +22,6 @@
   
   & td:last-child {
     text-align: right;
-  }
-  
-  &__caption {
-    width: 79px;
-    margin-bottom: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    text-align: left;
-    text-transform: uppercase;
-    
-    &--more {
-      width: 100%;
-      text-align: center;
-    }
   }  
   
   &__text {
@@ -35,8 +34,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .product-info {
-    
+  .product-info {    
     &__caption {
       width: 145px;
       margin: 40px auto 25px;
@@ -68,8 +66,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .product-info {
-    
+  .product-info {    
     &__caption {
       
       &--more {
@@ -78,6 +75,3 @@
     }
   }
 }
-
-
-

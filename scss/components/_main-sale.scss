@@ -101,12 +101,6 @@
       margin-bottom: 30px;
       border-collapse: collapse;
     }
-    
-    &__purchase {
-      &--show {
-
-      }
-    }
   }
 }
 
@@ -117,10 +111,6 @@
     &__item {
       width: 245px;
       margin-right: 80px;
-      
-      &--more {
-        margin-top: 143px;
-      }
     }
     
     &__item:nth-child(4n) {
@@ -128,7 +118,6 @@
     }
     
     &__picture {
-      margin-top: 64px;
       
       &--big {
         margin-top: 54px;
@@ -138,11 +127,6 @@
     &__picture--plus {
       margin-top: 55px;
     }
-    
-//    &__purchase--show {
-//      background-color: $color-white;
-//    }
-  }
-  
+  }  
 }
 

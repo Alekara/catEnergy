@@ -10,8 +10,8 @@
   
   &__title::after {
     content: "";
-    height: 3px;
     width: 54px;
+    height: 3px;    
     position: absolute;
       top: 50%;
       right: 0;    
@@ -38,8 +38,8 @@
       width: 30px;
       height: 3px;      
       position: absolute;      
-      top: 50%;
-      left: -36px;
+        top: 50%;
+        left: -36px;
       background-color: $color-primary;
     }
     
