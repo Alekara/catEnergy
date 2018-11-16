@@ -39,9 +39,13 @@
     
     &__caption {
       width: 145px;
-      margin: 45px auto 25px;
+      margin: 40px auto 25px;
       font-size: 20px;
       text-align: center;
+      
+      &--more {
+        margin: 60px auto 30px;
+      }
     }
     
     & tbody {
@@ -56,8 +60,7 @@
     
     &__text {
       width: 175px;
-      //    height: 50px;
-      margin: 0 auto 44px;
+      margin: 0 auto 77px;
       font-size: 16px;
       line-height: 20px;    
     }    
@@ -66,10 +69,13 @@
 
 @media (min-width: $desktop-width) {
   .product-info {
-
-    &__text {
-      margin-bottom: 72px;
-    }    
+    
+    &__caption {
+      
+      &--more {
+        margin: 58px auto 29px;
+      }
+    }
   }
 }
 
